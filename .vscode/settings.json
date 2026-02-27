@@ -2,7 +2,8 @@
     "java.project.sourcePaths": [
         "src",
         "lab2a",
-        "lab3"
+        "lab3",
+        "lab4",
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [

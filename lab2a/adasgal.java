@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class adasgal {
     public static void calculate() {
+        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
 
         System.out.print("gerin radius oruulnu (meter): ");

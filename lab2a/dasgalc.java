@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class dasgalc {
     public static void calculate() {
+        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
 
         System.out.print("A tseg ax ay: ");

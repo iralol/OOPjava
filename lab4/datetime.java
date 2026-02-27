@@ -83,13 +83,13 @@ public class DateTime {
 
     public void printdayofweek() {
         String[] days = {
-                "Sunday",
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday"
+                "butensain",
+                "Negdeh odr",
+                "hoyrdoh odr",
+                "Gurawdah odr",
+                "Dorovdeh odr",
+                "Tawdah odr",
+                "Hagassain"
         };
 
         int code = dayofweek();

@@ -4,9 +4,9 @@ public class Main {
         savings s1 = new savings(
                 "Bogd hadaglamj",
                 "₮",
-                10.5,
-                5,
-                1300000.00
+                12.5,
+                6,
+                1200000.00
         );
 
         s1.savingsReport();

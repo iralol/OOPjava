@@ -2,14 +2,12 @@
 public class savings {
 
     // Private gishuun ogogdol
-    
+
     private String name;        // hadgalamjin ner
     private String currency;    // valiut
     private double annualRate;  // jilin huu (%)
     private int months;         // hugatsaa (sar)
     private double initialBalance; // ehni uldegdel
-
-    // Constructor
 
     public savings(String name, String currency, double annualRate, int months, double initialBalance) {
         this.name = name;

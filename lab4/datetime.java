@@ -1,15 +1,11 @@
-public class datetime {
-    // ======================
-    // Гишүүн өгөгдөл
-    // ======================
+public class DateTime {
     private int year;
     private int month;
     private int day;
 
-    // ======================
     // Байгуулагч
-    // ======================
-    public datetime(String dt) {
+
+    public DateTime(String dt) {
         // 1919.05.21 | 1919/05/21 | 1919-05-21 зэргийг дэмжинэ
         String[] values = dt.split("[-./]");
         year = Integer.parseInt(values[0]);
@@ -17,17 +13,15 @@ public class datetime {
         day = Integer.parseInt(values[2]);
     }
 
-    // ======================
-    // YearCode
-    // ======================
+    // jil
+
     private int getyearcode(int year) {
         int y = year % 100;
         return (y + y / 4) % 7;
     }
 
-    // ======================
-    // MonthCode
-    // ======================
+    // sar
+
     private int getmonthcode(int month) {
         switch (month) {
             case 1:  return 0; // January
@@ -46,9 +40,8 @@ public class datetime {
         }
     }
 
-    // ======================
-    // CenturyCode
-    // ======================
+    // Century
+
     private int getcenturycode(int century) {
         switch (century) {
             case 17: return 4;
@@ -62,9 +55,8 @@ public class datetime {
         }
     }
 
-    // ======================
-    // LeapYearCode
-    // ======================
+    // leap year өндөр жил
+
     private int getleapyearcode(int year, int month) {
         boolean isLeap =
                 (year % 4 == 0 && year % 100 != 0) ||
@@ -76,9 +68,8 @@ public class datetime {
         return 0;
     }
 
-    // ======================
-    // DayOfWeek code (0–6)
-    // ======================
+    // dolo hongin gariguud (0–6)
+
     private int dayofweek() {
         int yearCode = getyearcode(year);
         int monthCode = getmonthcode(month);
@@ -88,9 +79,8 @@ public class datetime {
         return (yearCode + monthCode + centuryCode + day - leapYearCode) % 7;
     }
 
-    // ======================
-    // Гариг хэвлэх
-    // ======================
+    // garig hewleh
+
     public void printdayofweek() {
         String[] days = {
                 "Sunday",

@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -7,7 +6,7 @@ public class Main {
         System.out.print("Ognoo oruul (yyyy.mm.dd): ");
         String input = sc.nextLine();
 
-        datetime dt = new datetime(input);
+        DateTime dt = new DateTime(input);
         dt.printdayofweek();
     }
 }

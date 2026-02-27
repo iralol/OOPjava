@@ -1,8 +1,8 @@
 
 public class savings {
-    // =========================
+
     // Private gishuun ogogdol
-    // =========================
+    
     private String name;        // hadgalamjin ner
     private String currency;    // valiut
     private double annualRate;  // jilin huu (%)
@@ -10,7 +10,7 @@ public class savings {
     private double initialBalance; // ehni uldegdel
 
     // Constructor
-    // =========================
+
     public savings(String name, String currency, double annualRate, int months, double initialBalance) {
         this.name = name;
         this.currency = currency;
@@ -19,23 +19,20 @@ public class savings {
         this.initialBalance = initialBalance;
     }
 
-    // ==========================================
-    // Private function - hurimtlagdsn huu bodoh
-    // ==========================================
+    // Private func - hurimtlagdsn huu bodoh
+
     private double savingsCalcAccrued() {
         return initialBalance * (annualRate / 12) * months / 100;
     }
 
-    // ==========================================
-    // Private function - etsesin uldegdel bodoh
-    // ==========================================
+    // Private func - etsesin uldegdel bodoh
+
     private double savingsCalc() {
         return initialBalance + savingsCalcAccrued();
     }
 
-    // ==========================================
-    // Public function - tailan hevleh
-    // ==========================================
+    // Public func - tailan hevleh
+
     public void savingsReport() {
 
         double accruedInterest = savingsCalcAccrued();

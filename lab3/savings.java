@@ -9,7 +9,6 @@ public class savings {
     private int months;         // hugatsaa (sar)
     private double initialBalance; // ehni uldegdel
 
-    // =========================
     // Constructor
     // =========================
     public savings(String name, String currency, double annualRate, int months, double initialBalance) {

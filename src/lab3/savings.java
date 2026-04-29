@@ -1,4 +1,4 @@
-
+package lab3;
 public class savings {
 
     // Private gishuun ogogdol

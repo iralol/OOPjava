@@ -1,5 +1,6 @@
-
+package lab2a;
 import java.util.Scanner;
+
 public class dasgalb {
 public static void calculate() {
         @SuppressWarnings("resource")

@@ -1,3 +1,4 @@
+package lab2a;
 import java.util.Scanner;
 
 public class adasgal {

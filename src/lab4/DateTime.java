@@ -1,3 +1,5 @@
+package lab4;
+
 public class DateTime {
     private int year;
     private int month;
